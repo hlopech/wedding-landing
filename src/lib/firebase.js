@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: 'AIzaSyA95opqIXr6XTTzvoaHgxue80AoxbO3mcw',
+  authDomain: "wedding-landing-6d63c.firebaseapp.com",
+  projectId: "wedding-landing-6d63c",
+  storageBucket: "wedding-landing-6d63c.firebasestorage.app",
+  messagingSenderId: 904013771359,
+  appId: "1:904013771359:web:f8ca1e507df70038b861ea"
 };
 
 const app = initializeApp(firebaseConfig);
