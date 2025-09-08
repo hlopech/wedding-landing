@@ -1,0 +1,133 @@
+.game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#87ceeb, #bfe9ff);
+    /* небо */
+    overflow: hidden;
+    touch-action: none;
+    /* чтобы мобильный браузер не обрабатывал жесты по-особому */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 22%;
+    background: linear-gradient(#4caf50, #3b8a3b);
+    z-index: 2;
+}
+
+.score {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font: bold 20px/1 Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    z-index: 10;
+}
+
+.dino {
+    position: absolute;
+    left: 22px;
+    bottom: 22%;
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 22%;
+    width: 48px;
+    height: 64px;
+    pointer-events: none;
+}
+
+.bg-grass {
+    background: linear-gradient(180deg, #78c947 0%, #4aad2f 100%);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: skewX(-6deg);
+}
+
+.bg-rock {
+    background: linear-gradient(180deg, #7f7f7f 0%, #5a5a5a 100%);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: rotate(-6deg);
+}
+
+.game-area svg {
+    display: block;
+}
+
+/* ---------- кусты/трава/камни стили ---------- */
+.bush-svg {
+    display: block;
+}
+
+.bush-group {
+    transform-origin: 28px 30px;
+    animation: bush-breath 4.6s ease-in-out infinite;
+}
+
+.bush-flowers {
+    animation: flower-twitch 3.8s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes bush-breath {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    40% {
+        transform: translateY(-2px) scale(1.01);
+    }
+
+    60% {
+        transform: translateY(-1px) scale(1.005);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes flower-twitch {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* rocks */
+.game-area svg {
+    display: block;
+}
+
+/* legacy elements hidden (если они остались) */
+.bg-grass,
+.bg-rock {
+    display: none !important;
+}
+
+/* адаптив */
+@media (max-width: 420px) {
+    .bush-group {
+        animation-duration: 5.0s;
+        transform-origin: 24px 28px;
+    }
+}

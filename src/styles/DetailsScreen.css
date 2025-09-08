@@ -1,0 +1,53 @@
+.events-section {
+    color: white;
+}
+
+.events-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #F3EBDD;
+    background-color: #2A2922;
+    padding: 10px 50px 10px 50px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: 10;
+    position: absolute;
+}
+
+.events-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 80px 20px;
+
+}
+
+.event-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+.event-label {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #F3EBDD;
+}
+
+.line2 {
+    width: 100%;
+}
