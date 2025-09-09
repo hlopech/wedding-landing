@@ -73,7 +73,7 @@ function SurveyScreen() {
         <div className="form-container">
           <h2 className="events-title">Опрос</h2>
           <div data-aos="fade-up" className="form-header">
-            <h2>Просим вас ответить на несколько нетрудных, но очень важных вопросов</h2>
+            <h2>Просим вас ответить на несколько простых, но очень важных вопросов</h2>
           </div>
     
           <form data-aos="fade-up" onSubmit={handleSubmit} className="guest-form">
@@ -89,7 +89,7 @@ function SurveyScreen() {
               />
             </div>
     
-            <div className="form-group">
+            {/* <div className="form-group">
               <label>К какой локации приедете?</label>
               <div className="radio-group">
                 <label className="radio-option">
@@ -116,10 +116,10 @@ function SurveyScreen() {
                   Банкетный зал
                 </label>
               </div>
-            </div>
+            </div> */}
     
             <div className="form-group">
-              <label>Нужно ли обеспечение жилья?</label>
+              <label>Нужна ли помощь в органзиации ночлега?</label>
               <div className="radio-group">
                 <label className="radio-option">
                   <input
@@ -137,35 +137,25 @@ function SurveyScreen() {
                   <input
                     type="radio"
                     name="housing"
-                    value="Нет, остановлюсь у родственников/знакомых"
-                    checked={formData.housing === 'Нет, остановлюсь у родственников/знакомых'}
+                    value="Нет"
+                    checked={formData.housing === 'Нет'}
                     onChange={handleChange}
                   />
                   <span className="radio-custom"></span>
-                  Нет, остановлюсь у родственников/знакомых
+                  Нет
                 </label>
                 <label className="radio-option">
                   <input
                     type="radio"
                     name="housing"
-                    value="Нет, сам/сама сниму жилье"
-                    checked={formData.housing === 'Нет, сам/сама сниму жилье'}
+                    value="Нет, но найду сам/сама"
+                    checked={formData.housing === 'Нет, но найду сам/сама'}
                     onChange={handleChange}
                   />
                   <span className="radio-custom"></span>
-                  Нет, сам/сама сниму жилье
+                  Нет, но найду сам/сама
                 </label>
-                <label className="radio-option">
-                  <input
-                    type="radio"
-                    name="housing"
-                    value="Нет, я местный/местная"
-                    checked={formData.housing === 'Нет, я местный/местная'}
-                    onChange={handleChange}
-                  />
-                  <span className="radio-custom"></span>
-                  Нет, я местный/местная
-                                  </label>
+          
               </div>
             </div>
     

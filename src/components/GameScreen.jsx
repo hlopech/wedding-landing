@@ -776,12 +776,12 @@ export default function GameScreen({
             width: '90%', maxWidth: 420, backgroundColor:'#7D5642', borderRadius: 12, padding: 18, boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
             display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center'
           }}>
-            <h2 style={{ margin: 0 , fontFamily: "Inter", fontWeight: 200,color:'#F3EBDD'}}>Введите имя</h2>
+            <h2 style={{ margin: 0 , fontFamily: "Inter", fontWeight: 200,color:'#F3EBDD'}}>Как вас зовут?</h2>
             
             <input
               value={playerName}
               onChange={(e) => setPlayerName(e.target.value)}
-              placeholder="Ваше имя"
+              placeholder="Ввести..."
               style={{ width: '100%', padding: '10px 12px', fontSize: 16, borderRadius: 8, border: '1px solid #ccc' }}
             />
             <div style={{ width: '100%', display: 'flex', gap: 8 }}>

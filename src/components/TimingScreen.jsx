@@ -14,10 +14,9 @@ function TimingScreen() {
     });
   }, []);
 
- const events = [{label :"Торжественная роспись",time :"15.10",place:"ЗАГС Первомайского района ул.Карбышева 1/3"},
-                {label :"Фотосессия",time :"15.30",place:"Мест офотосессии"},
-                {label :"Начало банкета",time :"17.00",place:"M-Hall ул.Мясникова 37/2"},
-                {label :"Конец банкета",time :"00.00",place:"M-Hall ул.Мясникова 37/2"}]
+ const events = [{label :"Торжественная роспись",time :"15:10",place:"ЗАГС Первомайского района ул.Карбышева 1/3, г.Минск"},
+                {label :"Начало банкета",time :"17:00",place:"M-Hall ул.Мясникова 37/2, г.Минск"},
+                {label :"Конец банкета",time :"00:00",place:"M-Hall ул.Мясникова 37/2, г.Минск"}]
   return (
     <div className="events-section">
     <h2  className="events-title">Тайминг</h2>
