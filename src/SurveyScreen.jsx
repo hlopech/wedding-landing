@@ -119,7 +119,7 @@ function SurveyScreen() {
             </div> */}
     
             <div className="form-group">
-              <label>Нужна ли помощь в органзиации ночлега?</label>
+              <label>Нужна ли помощь в организации ночлега?</label>
               <div className="radio-group">
                 <label className="radio-option">
                   <input
