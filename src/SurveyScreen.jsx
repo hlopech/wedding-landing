@@ -18,7 +18,6 @@ function SurveyScreen() {
 
     const [formData, setFormData] = useState({
         name: '',
-        location: '',
         housing: '',
         allergies: '',
         alcohol: '',
@@ -37,7 +36,7 @@ function SurveyScreen() {
         e.preventDefault();
       
         // минимальная валидация перед отправкой
-        if (!formData.name || !formData.location || !formData.housing || !formData.alcohol) {
+        if (!formData.name || !formData.housing || !formData.alcohol) {
           alert('Пожалуйста, заполните обязательные поля.');
           return;
         }
@@ -45,7 +44,6 @@ function SurveyScreen() {
         try {
           await addDoc(collection(db, 'survey'), {
             name: formData.name,
-            location: formData.location,
             housing: formData.housing,
             allergies: formData.allergies || "",
             alcohol: formData.alcohol,
@@ -57,7 +55,6 @@ function SurveyScreen() {
           // очистка формы
           setFormData({
             name: '',
-            location: '',
             housing: '',
             allergies: '',
             alcohol: '',
