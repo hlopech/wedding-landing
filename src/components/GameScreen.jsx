@@ -297,9 +297,9 @@ export default function GameScreen({
 
   // jump params (apex model)
   const jumpParamsRef = useRef({
-    jumpHeight: 180, // px
+    jumpHeight: 200, // px
     tUp: 220,        // ms
-    tApex: 140,      // ms
+    tApex: 240,      // ms
     tDown: 260       // ms
   });
 
