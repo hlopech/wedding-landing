@@ -144,17 +144,7 @@ function SurveyScreen() {
                   <span className="radio-custom"></span>
                   Нет
                 </label>
-                <label className="radio-option">
-                  <input
-                    type="radio"
-                    name="housing"
-                    value="Нет, но найду сам/сама"
-                    checked={formData.housing === 'Нет, но найду сам/сама'}
-                    onChange={handleChange}
-                  />
-                  <span className="radio-custom"></span>
-                  Нет, но найду сам/сама
-                </label>
+           
           
               </div>
             </div>
