@@ -5,6 +5,7 @@
     background: linear-gradient(#87ceeb, #bfe9ff);
     /* небо */
     overflow: hidden;
+    padding-top: env(safe-area-inset-top);
     touch-action: none;
     /* чтобы мобильный браузер не обрабатывал жесты по-особому */
     -webkit-user-select: none;
