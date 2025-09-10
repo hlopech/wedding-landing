@@ -23,7 +23,9 @@
 
 .score {
     position: absolute;
-    top: 12px;
+    /* top: 12px; */
+    top: calc(env(safe-area-inset-top, 0px) + 20px);
+    margin-top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font: bold 20px/1 Arial, sans-serif;
