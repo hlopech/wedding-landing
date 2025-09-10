@@ -717,7 +717,7 @@ export default function GameScreen({
       <div className="ground" />
 
       {/* top HUD: name + score */}
-      <div style={{ position: 'absolute', fontSize: '30px',fontFamily: "Inter", fontWeight: 200,color:'#F3EBDD',top: 10, left: 12, zIndex: 50, color: 'white', textShadow: '1px 1px 2px #000' }}>
+      <div style={{ position: 'absolute', fontSize: '30px',fontFamily: "Inter", fontWeight: 200,color:'#F3EBDD',top: 35, left: 12, zIndex: 50, color: 'white', textShadow: '1px 1px 2px #000' }}>
         {playerName ? <div style={{ fontWeight: 600 }}>{playerName}</div> : null}
       </div>
 
