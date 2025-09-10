@@ -5,18 +5,12 @@
     background: linear-gradient(#87ceeb, #bfe9ff);
     /* небо */
     overflow: hidden;
-    padding-top: env(safe-area-inset-top);
     touch-action: none;
     /* чтобы мобильный браузер не обрабатывал жесты по-особому */
     -webkit-user-select: none;
     user-select: none;
 }
 
-@supports (-webkit-touch-callout: none) {
-    .game-area {
-      height: -webkit-fill-available !important;
-    }
-  }
 .ground {
     position: absolute;
     bottom: 0;
@@ -28,9 +22,7 @@
 
 .score {
     position: absolute;
-    /* top: 12px; */
-    top: calc(env(safe-area-inset-top, 0px) + 20px);
-    margin-top: 30px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
     font: bold 20px/1 Arial, sans-serif;
